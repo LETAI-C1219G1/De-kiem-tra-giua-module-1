@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a>Enter a number : </a>
+<input type="text" id="input">
+<button id="buton" onclick="showPrime()">Show prime</button><br>
+<script>
+    function showPrime(){
+        let number;
+        number= document.getElementById("input").value;
+        let n=2;
+        while (n<number){
+            if (check(n)){
+                document.write(n+",");
+            }
+            n++;
+        }}
+    function check(n) {
+        if (n < 2) {
+            return false;
+        }
+        else {
+            let i=2
+            while(i < n) {
+                if (n % i === 0) {
+                    return false;
+                }i++;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

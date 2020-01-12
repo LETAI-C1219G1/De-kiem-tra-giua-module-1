@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20];
+    function sumOdd(array)
+    {
+        let sum = 0;
+        for (let i = 0; i < array.length; i++){
+            if (array[i] % 2 != 0){
+                sum += array[i];
+            }
+        }
+         document.write("Tong so le  : " + sum);
+    }
+    sumOdd(array);
+</script>
+</body>
+</html>

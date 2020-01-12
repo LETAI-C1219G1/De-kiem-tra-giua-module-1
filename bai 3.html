@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let d = new Date();
+    let currentYear = d.getFullYear();
+    function howOld(year) {
+        if (year > currentYear) {
+            alert("Error .");
+        } else if ( year == currentYear ) {
+            alert("Bo me vua sinh ra ban. ");
+        } else {
+            alert("Tuoi cua ban : " + (currentYear - year));
+        }
+    }
+    let year = prompt("Nhap nam sinh cua ban ?");
+    year = parseInt(year);
+    if(isNaN(year) == true) {
+        alert("Khong hop le");
+    } else {
+        howOld(year);
+    }
+</script>
+</body>
+</html>
